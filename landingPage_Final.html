@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exclusive Offer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* Black background */
+            color: #fff; /* White text color */
+        }
+        h1 {
+            color: #ffcc00; /* Yellow color for headings */
+            margin-top: 30px;
+        }
+        p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            font-size: 20px; /* Increased font size */
+        }
+        b {
+            background-color: #ffcc00; /* Yellow background for bold text */
+            padding: 5px;
+            border-radius: 5px;
+            color: #000; /* Black text color */
+        }
+        button {
+            padding: 15px 40px; /* Increased button padding */
+            font-size: 18px; /* Increased button font size */
+            background-color: #ffcc00; /* Yellow background for button */
+            color: #000; /* Black text color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 20px; /* Added margin to button */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+        }
+        button:hover {
+            background-color: #ffdb4d; /* Lighter yellow on hover */
+        }
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .company-logo {
+            margin: 0 20px;
+        }
+        .offer-details {
+            margin: 0 auto;
+            max-width: 600px;
+            padding: 0 20px;
+        }
+        .company-description {
+            font-size: 18px; /* Reduced font size */
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Company Logos -->
+    <div class="container">
+        <img src="https://i.imgur.com/cDkfaQi.png" alt="Qvwi Logo" class="logo company-logo">
+        <br>
+        <span class="company-description">(A <img src="https://i.imgur.com/gJuAG2F.png" alt="Skyworth Logo" class="logo company-logo" style="vertical-align: middle;"> Company)</span>
+        <br>
+        <img src="https://i.imgur.com/eKoNwdT.png" alt="TOD Logo" class="logo company-logo">
+    </div>
+
+    <div class="offer-details">
+        <h1>Welcome to Our Exclusive Offer!</h1>
+        <p>As a special partnership between Qvwi, a Skyworth Company, and TOD, we're thrilled to offer you an exclusive deal:</p>
+        <h2><b>20% off TOD subscriptions!</b></h2>
+        <p>Ready to enjoy endless entertainment for less? Just hit <b>"Get Offer"</b> below and <b>save 20% on TOD subscriptions</b>.</p>
+        <button onclick="redirectToPartner()">Get Offer</button>
+    </div>
+
+    <script>
+        function redirectToPartner() {
+            console.log("User clicked 'Get Offer' button."); // Log the button click
+            window.location.href = "https://www.tod.tv/en/promo"; // Redirect to the partner's website
+        }
+    </script>
+</body>
+</html>
